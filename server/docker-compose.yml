@@ -10,6 +10,7 @@ services:
       - POSTGRES_DB=${WHOOP_DB_NAME:-whoop}
       - POSTGRES_USER=${WHOOP_DB_USER:-whoop}
       - POSTGRES_PASSWORD=${WHOOP_DB_PASSWORD}
+      - POSTGRES_HOST_AUTH_METHOD=scram-sha-256
       - TZ=${TZ:-UTC}
     volumes:
       - ${DATA_ROOT}/whoop/db:/var/lib/postgresql/data
