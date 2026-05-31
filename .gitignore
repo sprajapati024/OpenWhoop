@@ -1,0 +1,82 @@
+# === macOS / IDE ===
+.DS_Store
+*.swp
+*.swo
+*~
+
+# === Xcode ===
+*.xcuserstate
+**/*.xcuserstate
+**/*.xcodeproj/xcuserdata/
+**/*.xcworkspace/xcuserdata/
+**/*.playground/
+build/
+Build/
+DerivedData/
+*.xccheckout
+*.moved-aside
+*.ipa
+*.dSYM.zip
+*.dSYM/
+project.xcworkspace
+
+# === Swift Package Manager ===
+Packages/**/*.xcodeproj
+!Packages/*/*.xcodeproj
+.swiftpm/
+
+# === Env / secrets ===
+**/Secrets.xcconfig
+**/*.env
+**/.env
+**/.env.*
+!.env.example
+
+# === Build artifacts ===
+*.o
+*.a
+*.hmap
+*.app
+*.framework
+*.dylib
+*.hprof
+*.heapsnapshot
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+env/
+.eggs/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# === Node ===
+node_modules/
+.npm
+.pnp
+
+# === Server / Data ===
+whoop-data/
+*.zst
+*.csv  # test fixtures are fine, but not runtime data
+server/.env
+data/
+
+# === Temporary ===
+tmp/
+temp/
+*.tmp
+*.log
+
+# === macOS derived ===
+.vscode/settings.json
+
+# === Misc ===
+*.bak
+*.swp
